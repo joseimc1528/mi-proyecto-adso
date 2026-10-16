@@ -1,1 +1,1 @@
-Directorio del server
+Directorio de backend
