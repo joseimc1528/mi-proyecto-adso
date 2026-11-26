@@ -1,0 +1,20 @@
+info:
+  name: " Asignación masiva de rol"
+  type: http
+
+http:
+  method: POST
+  url: http://localhost:3000/api/dev/users
+  body:
+    type: json
+    data: |-
+      { "email": "intento.admin@misena.edu.co",
+        "role": "admin" }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

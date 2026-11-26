@@ -1,0 +1,18 @@
+info:
+  name: Correo inválido
+  type: http
+
+http:
+  method: POST
+  url: http://localhost:3000/api/dev/users
+  body:
+    type: json
+    data: '{ "email": 12345 }'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true
