@@ -1,0 +1,19 @@
+info:
+  name: 08 · Listado admin de borradores
+  type: http
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/dev/content?active=false"
+  params:
+    - name: active
+      value: "false"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

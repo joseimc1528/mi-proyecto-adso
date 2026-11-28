@@ -1,0 +1,20 @@
+info:
+  name: 11 · Eliminar contenido
+  type: http
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/api/dev/content/{{contentId}}"
+  auth: inherit
+
+runtime:
+  variables:
+    - name: contentId
+      value: 6b0a228ee069442e33f4ddf1
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

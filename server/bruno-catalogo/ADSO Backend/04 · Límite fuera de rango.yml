@@ -1,0 +1,19 @@
+info:
+  name: 04 · Límite fuera de rango
+  type: http
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/content/published?limit=500"
+  params:
+    - name: limit
+      value: "500"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

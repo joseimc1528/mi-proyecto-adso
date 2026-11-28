@@ -1,0 +1,29 @@
+info:
+  name: 05 · Crear servicio (borrador)
+  type: http
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/dev/content"
+  body:
+    type: json
+    data: |-
+      
+      {
+        "type": "service",
+        "name": "Analítica de Datos para el Agro",
+        "category": "agroindustria",
+        "description": "Tableros de producción agrícola con datos abiertos del Huila.",
+        "icon": "bar-chart",
+        "code": "SRV-DATA-05",
+        "hours": 40,
+        "views": 999999
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true
